@@ -1,0 +1,24 @@
+=== AddonManager ===
+This plugin may be used to manage most of the plugins on your server. It is able to automatically install and update plugins.
+
+=== Usage ===
+* /am details <plugin> #Gives details about the <plugin>
+* /am info #Gives information about the installed plugins
+* /am update <plugin> #Updates <plugin>
+* /am install <plugin> #Installs <plugin>
+
+<plugin> is the name of the .jar file. Our names may slightly differ from the original names. Our names may be found [[http://www.blockmirror.com/plugins/|here]].
+
+=== Permissions ===
+* addonmanager.* #Gives access to all commands
+* addonmanager.notify #Notify users when there are updates available
+* addonmanager.notify.login #Notify users when there are updates available (upon login)
+* addonmanager.notify.update #Notify users when there are updates available (after an update)
+* addonmanager.usage #Allows you to update and install plugins
+
+All commands default to op.
+
+=== Which plugins does AddonManager support? ===
+Currently, AddonManager supports all plugins on dev.bukkit.org which are released under an Open-Source licence. All plugins are mirrored on our servers for easier administration.
+A full list of the supported plugins may be found [[http://www.blockmirror.com/plugins/|here]].
+We're working on making more plugins available. If you want your plugin to work with this plugin, just contact us.
