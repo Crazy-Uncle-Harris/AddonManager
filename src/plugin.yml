@@ -1,0 +1,30 @@
+name: AddonManager
+main: com.BlockMirror.AddonManager.AddonManager
+version: 0.0.1
+commands:
+  am:
+      description: Manages all the functions auf AddonManager
+      usage: /<command> [command] <plugin>. Valid commands are info, install, update and details.
+      permission: addonmanager.usage
+      permission-message: You do not have permissions to use this command.
+permissions:
+    addonmanager.*:
+        description: Gives access to all commands
+        children:
+            addonmanager.notify: true
+            addonmanager.usage: true
+    addonmanager.notify:
+        description: Notify users when there are updates available
+        default: op
+        children:
+            addonmanager.notify.login: true
+            addonmanager.notify.update: true
+    addonmanager.notify.login:
+        description: Notify users when there are updates available (upon login)
+        default: op
+    addonmanager.notify.update:
+        description: Notify users when there are updates available (after an update)
+        default: op
+    addonmanager.usage:
+        description: Allows you to update and install plugins
+        default: op

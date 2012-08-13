@@ -1,0 +1,4 @@
+inform-on-login: true
+inform-on-update: true
+ignore-plugins:
+- somePluginName
